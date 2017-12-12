@@ -1,0 +1,12 @@
+try:
+  while True:
+    a=int(input('現在看的頻道:'))
+    b=int(input('想切換的頻道:'))
+    if 0<a and b<99:
+      print(b-a)
+    elif a==0 and b==99:
+      print('1')
+    else:
+      break
+except ValueError:
+    print('輸入錯誤')
